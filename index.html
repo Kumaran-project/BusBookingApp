@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: cadetblue;
+    }
+    #header{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Bus Booking</h1>
+    <div>
+      <label for="filter">Filter</label>
+      <select id="filter" name="filter">
+        <option value="all" selected>all</option>
+        <option value="bus1">bus1</option>
+        <option value="bus2">bus2</option>
+        <option value="bus3">bus3</option>
+      </select>
+    </div>
+   
+  </div>
+ 
+
+<form action="">
+  <label for="name">Passenger Name</label>
+  <input type="text" id="name">
+  <br>
+  <br>
+  <label for="email">Email</label>
+  <input type="email"  id="email">
+  <br>
+  <br>
+  <label for="phno">Phone Number</label>
+  <input type="tel" name="" id="phno">
+  <br>
+  <br>
+  <label for="bus">Bus Number</label>
+  <select id="bus" name="bus">
+    <option value="bus1">bus1</option>
+    <option value="bus2">bus2</option>
+    <option value="bus3">bus3</option>
+  </select>
+  <br>
+  <br>
+  <button>Book</button>
+</form>
+  <ul id="itemsToAdd">
+
+  </ul>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
